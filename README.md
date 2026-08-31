@@ -1,10 +1,6 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/banner-static.png">
-  <img src="./assets/banner.gif" width="100%" alt="Storm-blue clouds slowly open around a narrow warm-white skylight above a sea of clouds and rain.">
-</picture>
-
-<picture>
-  <img src="./assets/key-art.png" width="100%" alt="A young woman pauses at a residential rooftop doorway while a puddle reveals an inverted rain-eroded white city beneath a storm-lit sky.">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/capsule-wave-header-static.svg">
+  <img src="./assets/capsule-wave-header.svg" width="100%" alt="Capsule Render type=waving-style animated gradient header.">
 </picture>
 
 <p align="center">
@@ -24,10 +20,12 @@
 </p>
 
 <picture>
-  <img src="./profile-3d-contrib/profile-season-animate.svg" width="100%" alt="Visions' animated three-dimensional GitHub contribution calendar using Northern Hemisphere seasonal colors.">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/visions-1013/visions-1013/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/visions-1013/visions-1013/output/github-contribution-grid-snake.svg">
+  <img src="https://raw.githubusercontent.com/visions-1013/visions-1013/output/github-contribution-grid-snake.svg" width="100%" alt="Animated GitHub contribution graph snake.">
 </picture>
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/footer-static.png">
-  <img src="./assets/footer.gif" width="100%" alt="Silver rain falls into deep storm-blue mist as a single warm-white light passes through.">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/capsule-wave-footer-static.svg">
+  <img src="./assets/capsule-wave-footer.svg" width="100%" alt="Capsule Render type=waving-style animated gradient footer.">
 </picture>
