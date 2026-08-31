@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 220" preserveAspectRatio="none" data-capsule-type="waving" data-color-mode="animated-gradient" role="img" aria-labelledby="title desc">
+  <title id="title">Capsule Render type=waving animated gradient header</title>
+  <desc id="desc">Layered waves and a continuously cycling gradient move gently across a wide banner.</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop id="base-start" offset="0" stop-color="#0b1b2b"/>
+      <stop id="base-mid" offset="0.52" stop-color="#123f5a"/>
+      <stop id="base-end" offset="1" stop-color="#237a93"/>
+    </linearGradient>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#173f5c" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#48a6b8" stop-opacity="0.62"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d6078" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#71c3c7" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2d8395" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#b8e1d7" stop-opacity="0.82"/>
+    </linearGradient>
+    <style>
+      #base-start { animation: capsule-color-start 18s ease-in-out infinite; }
+      #base-mid { animation: capsule-color-mid 18s ease-in-out infinite; }
+      #base-end { animation: capsule-color-end 18s ease-in-out infinite; }
+      .wave-back { animation: capsule-drift-back 14s ease-in-out infinite alternate; }
+      .wave-mid { animation: capsule-drift-mid 11s ease-in-out infinite alternate; }
+      .wave-front { animation: capsule-drift-front 9s ease-in-out infinite alternate; }
+      @keyframes capsule-drift-back {
+        from { transform: translateX(-48px); }
+        to { transform: translateX(48px); }
+      }
+      @keyframes capsule-drift-mid {
+        from { transform: translateX(38px); }
+        to { transform: translateX(-38px); }
+      }
+      @keyframes capsule-drift-front {
+        from { transform: translateX(-26px); }
+        to { transform: translateX(26px); }
+      }
+      @keyframes capsule-color-start {
+        0%, 100% { stop-color: #0b1b2b; }
+        33% { stop-color: #31265e; }
+        66% { stop-color: #063c4c; }
+      }
+      @keyframes capsule-color-mid {
+        0%, 100% { stop-color: #123f5a; }
+        33% { stop-color: #704a82; }
+        66% { stop-color: #0f8a8a; }
+      }
+      @keyframes capsule-color-end {
+        0%, 100% { stop-color: #237a93; }
+        33% { stop-color: #d2769f; }
+        66% { stop-color: #49c2b2; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #base-start, #base-mid, #base-end, .wave-back, .wave-mid, .wave-front { animation: none; }
+      }
+    </style>
+  </defs>
+  <rect width="1280" height="220" fill="url(#base)"/>
+  <path class="wave-back" d="M-220 143 C-70 111 74 167 210 157 C365 146 448 101 600 135 C750 169 858 194 1015 153 C1155 117 1290 137 1500 173 V220 H-220 Z" fill="url(#back)"/>
+  <path class="wave-mid" d="M-220 165 C-72 137 70 184 225 178 C374 172 482 126 620 157 C774 192 870 211 1022 175 C1164 142 1300 161 1500 193 V220 H-220 Z" fill="url(#mid)"/>
+  <path class="wave-front" d="M-220 188 C-58 162 84 205 238 198 C392 191 490 160 638 181 C792 204 902 224 1048 197 C1185 171 1300 190 1500 209 V220 H-220 Z" fill="url(#front)"/>
+</svg>
